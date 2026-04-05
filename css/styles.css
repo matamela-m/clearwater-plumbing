@@ -1887,11 +1887,11 @@ p { line-height: 1.75; color: var(--gray-700); }
   .hero               { padding-block: 72px 56px; min-height: auto; }
   .contact-form-grid  { grid-template-columns: 1fr; gap: 2rem; }
   .about-story-grid   { grid-template-columns: 1fr; }
-  /* About images: two equal squares side by side on mobile */
-  .about-img-stack    { position: static; padding: 0; margin-bottom: 2rem; display: flex; gap: 0.5rem; align-items: flex-start; }
-  .about-img-main     { flex: 1; min-width: 0; width: auto; aspect-ratio: 1; border-radius: var(--radius-lg); }
-  .about-img-accent   { flex: 1; min-width: 0; position: relative; width: auto; bottom: auto; right: auto; aspect-ratio: 1; border-radius: var(--radius-lg); border: none; box-shadow: var(--shadow-md); overflow: hidden; background: var(--gray-200); }
-  .about-years-badge  { display: none; }
+  /* About images: full-width main image, van as corner inset */
+  .about-img-stack   { position: relative; padding: 0; display: block; margin-bottom: 1.5rem; }
+  .about-img-main    { width: 100%; aspect-ratio: 4/3; border-radius: var(--radius-lg); }
+  .about-img-accent  { width: 76px; height: 76px; aspect-ratio: 1; border: 3px solid var(--white); border-radius: var(--radius-md); }
+  .about-years-badge { display: none; }
   .contact-layout     { grid-template-columns: 1fr; }
   .faq-layout         { grid-template-columns: 1fr; }
   .faq-sidebar        { position: static; }
