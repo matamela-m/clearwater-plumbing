@@ -29,6 +29,11 @@
     hamburger.addEventListener('click', () => {
       const open = hamburger.classList.toggle('open');
       hamburger.setAttribute('aria-expanded', String(open));
+      if (open) {
+        // Position nav flush below wherever the header currently sits
+        // (accounts for emergency banner being visible or scrolled away)
+        mobileNav.style.top = header.getBoundingClientRect().bottom + 'px';
+      }
       mobileNav.classList.toggle('open', open);
       body.style.overflow = open ? 'hidden' : '';
     });
