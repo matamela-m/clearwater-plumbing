@@ -1883,8 +1883,10 @@ p { line-height: 1.75; color: var(--gray-700); }
 
 @media (max-width: 900px) {
   .hero-grid          { grid-template-columns: 1fr; }
-  .hero-visual        { display: none; }
-  .hero               { padding-block: 72px 56px; min-height: auto; }
+  .hero-visual        { display: block; margin-top: 2rem; }
+  .hero-img-inner img { height: 220px; }
+  .hero-badge-float   { display: none; }
+  .hero               { padding-block: 64px 48px; min-height: auto; }
   .contact-form-grid  { grid-template-columns: 1fr; gap: 2rem; }
   .about-story-grid   { grid-template-columns: 1fr; }
   /* About images: full-width main image, van as corner inset */
